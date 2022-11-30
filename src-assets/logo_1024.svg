@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 1024 1024" width="1024px" height="1024px" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <style>
+    .textual {
+      font-family: "Courier New";
+      font-size: 36px;
+      font-weight: 700;
+      text-anchor: middle;
+      white-space: pre;
+    }
+    .text {
+      fill: rgb(2, 96, 26);
+    }
+    .text-glow {
+      fill: rgb(213, 251, 200);
+      filter: url(#text-glow);
+    }
+  </style>
+  <defs>
+    <filter id="text-glow" primitiveUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%" bx:pinned="true">
+      <title>text-glow</title>
+      <feMorphology result="morphology-0" in="none" radius="0.01 0.025" operator="dilate"/>
+      <feColorMatrix result="color-matrix-0" in="morphology-0" values="1 0 0 0 0 1 1 0 0 0 0 0 1 0 0 0 0 0 1 0"/>
+      <feMerge result="merge-0">
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="color-matrix-0"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g id="text-spark-hammer" transform="matrix(1, 0, 0, 1, 0, -32.000031)">
+    <title>text-spark-hammer</title>
+    <g id="glowing-text" transform="matrix(1.735321, 0, 0, 1.735321, 16.513308, -503.904724)">
+      <title>glowing-text</title>
+      <text id="text-glow" class="textual text-glow" transform="matrix(1, 0, 0, 1, 30.599524, 1214.157959)"><title>text-glow</title><tspan x="254.931" y="-613.715">{"Bt":[],"Ter"</tspan><tspan x="254.931" dy="1em">​</tspan><tspan>:{"Tilty":[{"BlockM"</tspan><tspan x="254.931" dy="1em">​</tspan><tspan>:false,"BlockV":false,</tspan><tspan x="254.931" dy="1em">​</tspan><tspan>"Q":" ","Name":"Open"},{</tspan><tspan x="254.931" dy="1em">​</tspan><tspan>"BlockM":true,"BlockV":true</tspan><tspan x="254.931" dy="1em">​</tspan><tspan>,"Q":":","Name":"Stone"},{"BlockM"</tspan><tspan x="254.931" dy="1em">​</tspan><tspan>:true,"BlockV":false,"Q":"~","Name":</tspan><tspan x="254.931" dy="1em">​</tspan><tspan>"Water"},{"BlockM":false,"BlockV":true</tspan><tspan x="254.931" dy="1em">​</tspan><tspan>,"Q":"@","Name":"Fog"}],"Width":45,"Height":20</tspan></text>
+      <text id="text" class="textual text" transform="matrix(1, 0, 0, 1, 30.599524, 1214.157959)"><title>text</title><tspan x="254.931" y="-613.715">{"Bt":[],"Ter"</tspan><tspan x="254.931" dy="1em">​</tspan><tspan>:{"Tilty":[{"BlockM"</tspan><tspan x="254.931" dy="1em">​</tspan><tspan>:false,"BlockV":false,</tspan><tspan x="254.931" dy="1em">​</tspan><tspan>"Q":" ","Name":"Open"},{</tspan><tspan x="254.931" dy="1em">​</tspan><tspan>"BlockM":true,"BlockV":true</tspan><tspan x="254.931" dy="1em">​</tspan><tspan>,"Q":":","Name":"Stone"},{"BlockM"</tspan><tspan x="254.931" dy="1em">​</tspan><tspan>:true,"BlockV":false,"Q":"~","Name":</tspan><tspan x="254.931" dy="1em">​</tspan><tspan>"Water"},{"BlockM":false,"BlockV":true</tspan><tspan x="254.931" dy="1em">​</tspan><tspan>,"Q":"@","Name":"Fog"}],"Width":45,"Height":20</tspan></text>
+    </g>
+    <path id="spark" d="M 616.843 413.744 L 670.647 520.919 L 765.458 581.741 L 670.647 642.562 L 616.843 749.737 L 563.038 642.562 L 447.735 578.15 L 563.038 520.919 L 616.843 413.744 Z" style="fill: rgb(255, 255, 0);" transform="matrix(0.931232, -0.364426, 0.364426, 0.931232, -170.287181, 261.064546)">
+      <title>spark</title>
+    </path>
+    <g id="hammer" transform="matrix(2.035524, 2.392951, -2.392951, 2.035524, 812.830139, -724.610657)">
+      <title>hammer</title>
+      <rect id="hammer-handle" x="218.486" y="99.939" width="25.494" height="158.786" style="stroke-width: 3px; fill: rgb(112, 76, 76);">
+        <title>hammer-handle</title>
+      </rect>
+      <rect id="hammer-head" x="181.238" y="255.887" width="102.281" height="54.797" style="stroke: rgb(102, 102, 102); fill: rgb(127, 127, 127); stroke-width: 4px;">
+        <title>hammer-head</title>
+      </rect>
+    </g>
+  </g>
+  <path d="M 361.941 -7.093 L 463.73 189.582 L 643.097 301.193 L 463.73 412.804 L 361.941 609.479 L 260.152 412.804 L 80.785 301.193 L 260.152 189.582 Z" style="fill: rgb(255, 255, 0); visibility: hidden;" transform="matrix(0.931232, -0.364426, 0.364426, 0.931232, 126.623077, 723.405518)" bx:shape="star 361.941 301.193 281.156 308.286 0.512 4 1@35b07d4d"/>
+  <g transform="matrix(-1, 0, 0, -1, 734.670776, 762.548279)" style="visibility: hidden;">
+    <rect x="218.486" y="99.939" width="25.494" height="158.786" style="stroke-width: 3px; fill: rgb(112, 76, 76);"/>
+    <rect x="181.238" y="255.887" width="102.281" height="54.797" style="stroke: rgb(102, 102, 102); fill: rgb(127, 127, 127); stroke-width: 4px;"/>
+  </g>
+</svg>
