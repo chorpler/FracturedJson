@@ -1,4 +1,7 @@
 .idea
+.vscode
+.history
+.DS_Store
 bin
 obj
 **/*.user
