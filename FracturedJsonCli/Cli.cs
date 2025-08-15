@@ -17,11 +17,7 @@ namespace FracturedJsonCli
         {
             try
             {
-                var options = new FracturedJsonOptions()
-                {
-                    MaxInlineLength = int.MaxValue,
-                    OmitTrailingWhitespace = true,
-                };
+                var options = FracturedJsonOptions.Recommended();
 
                 var showHelp = false;
                 string? fileName = null;
@@ -48,6 +44,16 @@ namespace FracturedJsonCli
                             "N" or "NORMALIZE" => NumberListAlignment.Normalize,
                             _ => NumberListAlignment.Left,
                         }
+                    },
+                    {
+                        "k|comma=", "table comma placement [b,a,n]", s =>
+                            options.TableCommaPlacement = s.ToUpper() switch
+                            {
+                                "B" or "BEFORE" => TableCommaPlacement.BeforePadding,
+                                "A" or "AFTER" => TableCommaPlacement.AfterPadding,
+                                "N" or "NUMBER" => TableCommaPlacement.BeforePaddingExceptNumbers,
+                                _ => TableCommaPlacement.AfterPadding,
+                            }
                     },
                     {
                         "l|length=",
